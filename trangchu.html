@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Trang chủ</title>
+        <link href="/images/FINAL.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+        <link rel="stylesheet" href="styles.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <header>
+            <!-- Vị trí logo -->
+            <a href="/trangchu.html"><img id="logo" src="/images/logo_header.png" alt=""></a>
+            <!-- Vị trí thanh điều hướng -->
+            <div class="toggle" onclick="toggleMenu()"></div>
+            <nav class="navigation">
+                <a href="trangchu.html">Trang Chủ</a>					
+                <a href="gioithieu.html">Giới Thiệu</a>
+                <a href="sanpham.html">Sản Phẩm</a>
+                <a href="tintuc.html">Tin Tức</a>
+                <a href="lienhe.html">Liên Hệ</a>
+                <a href="feedback.html">Feedback</a>
+
+                <button class="btnLogin-popup">Đăng nhập</button>			
+            </nav>
+        </header>
+        <main>
+            <section>
+                <div>
+                    <div class="circle">
+
+                    </div>
+
+                    <div class="content">
+                        <div class="textBox">
+                            <h2>Đó không chỉ là trà sữa <br>Đó là <span>Double Dee Tea</span> </h2>
+                            <p>Double Dee Tea là một nơi sẽ mang lại những phút giây tận hưởng tuyệt vời đến cho bạn, mang một phong cách hiện đại và trẻ trung,
+                                luôn cập nhật xu hướng của giới trẻ với những hương vị hoàn toàn tươi mới và khác biệt. Hứa hẹn sẽ mang lại một trải nghiệm tuyệt vời ngay từ lần đầu tiên.
+                            </p>
+                            <a href="#">Tìm hiểu thêm</a>
+                        </div>
+
+                        <div class="imgBox">
+                            <img src="/images/sanpham_chuaxoalogo/Crunchie-Toffee-Latte_dl.png" class="doubleDeeTee" alt="">
+                        </div>
+                    </div>
+
+                    <ul class="thumb">
+                        <li><img onclick="chonHinh('/images/sanpham_chuaxoalogo/Crunchie-Toffee-Latte_dl.png'); doiMau('#5B4737')" src="/images/sanpham_chuaxoalogo/Crunchie-Toffee-Latte_dl.png" alt="" ></li>
+                        <li><img onclick="chonHinh('/images/sanpham_chuaxoalogo/Mint-Chocolate-Milk-Tea-w-Pearl-Iced.png'); doiMau('#65BC95')" src="/images/sanpham_chuaxoalogo/Mint-Chocolate-Milk-Tea-w-Pearl-Iced.png" alt="" ></li>
+                        <li><img onclick="chonHinh('/images/sanpham_chuaxoalogo/Mango-Milktea_dl.png'); doiMau('#ED9A66')" src="/images/sanpham_chuaxoalogo/Mango-Milktea_dl.png" alt="" ></li>
+                    </ul>
+                </div>
+        </section>  
+            <div class="slide-show">
+                <div class="list-image">
+                    <img class="img-ss" src="/images/trangchu/banner-quang-cao/cover-web-grape-scaled_dl.png" alt="">
+                    <img class="img-ss" src="/images/trangchu/banner-quang-cao/cover-web-nhãn-01-scaled_dl.png" alt="">
+                    <img class="img-ss" src="/images/trangchu/banner-quang-cao/Cover-web_rainbow-01-1-scaled_dl.png" alt="">
+                </div>
+                <div class="btns">
+                    <div class="btn-left btn"><i class='bx bx-chevron-left'></i></div>
+                    <div class="btn-right btn"><i class='bx bx-chevron-right'></i></div>
+                </div>
+            </div>     
+        <script src="/trangchu.js"></script>
+        </main> 
+
+<!-- Vị trí footer -->
+        <footer>	
+            <p>&copy; 2023 Bản quyền thuộc về Double Dee Tea. 
+                <a href="#" class="social-icon"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="#" class="social-icon"><i class='bx bxl-twitter' ></i></a>
+                <a href="#" class="social-icon"><i class='bx bxl-instagram-alt' ></i></a>
+        </footer>
+    </body>
+</html>
