@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Liên hệ</title>
+    <!-- phan logo -->
+    <link href="images/FINAL.png" rel="shortcut icon" type="image/vnd.microsoft.icon" >
+    <!-- phan jquery -->
+    <script src="bootstrap-5.3.2-dist/js/jquery-3.6.0.min.js"></script>
+    <!-- phan bootstrap -->
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- phan css -->
+    <link rel="stylesheet" href="css/lienhe.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <!-- phan javascript -->
+    <script src="js/trangchu.js"></script>
+    <!-- phan thu vien aos -->
+    <link rel="stylesheet" href="aos-master/aos-master/dist/aos.css">
+    <!-- phan thu vien icon -->
+    <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <!-- Vị trí logo -->
+        <a href="trangchu.html"><img id="logo" src="images/logo_header.png" alt=""></a>
+        <!-- Vị trí thanh điều hướng -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navigation">
+            <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a id="main" class="nav-link active multilang" href="trangchu.html">Trang Chủ</a>					
+                <a id="abs" class="nav-link multilang" href="gioithieu.html">Giới Thiệu</a>
+                <a id="product" class="nav-link multilang" href="sanpham.html">Sản Phẩm</a>
+                <a id="news" class="nav-link multilang" href="tintuc.html">Tin Tức</a>
+                <a id="call" class="nav-link multilang" href="lienhe.html">Liên Hệ</a>
+                <a id="cmd" class="nav-link multilang" href="comment.html">Đánh giá</a>
+                <a id="Dangnhap_b" class="nav-link  multilang"  href="dangnhap.html">Đăng nhập</a>		
+                <a href="donhang.html"><i class="fa-solid fa-cart-shopping pt-2"></i></a>
+              </div>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <main>
+        <div class=" p-2 ">
+            <h3 class="text-center">Liên hệ</h4>
+                <p class="text-center">Trong quá trình sử dụng sản phẩm, nếu xuất hiện sự không hài lòng xin vui lòng phản hồi dưới đây</p>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center py-5">
+                <div class="col-md-7">
+                    <div class="card">
+                        <form action="" class="needs-validation" onsubmit="return contactValidate(this);">
+                            <h3 class="text-center">Thông tin khách hàng</h4>
+                                <p class="text-center">Quý khách vui lòng điền các thông tin dưới đây để Double DeeTea dễ dàng liên hệ với quý khách nhé.</p>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Tên của bạn</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Tran Van Teo" required minlength="5">
+
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Địa chỉ mail</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInp2ut" placeholder="name@example.com" required>
+
+                                </div>
+                                <div class="mb-3" required>
+                                    <label for="" class="form-label">Về vấn đề</label><br>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">Thái độ nhân viên</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                        <label class="form-check-label" for="inlineCheckbox2">Chất lượng đồ uống</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                        <label class="form-check-label" for="inlineCheckbox3">Khác</label>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label" aria-required="">Góp ý, nhận xét</label>
+                                    <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <button class="btn btn-primary mt-3" type="submit" onclick="close()">Submit</button>
+
+                                </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+            <div class=" p-2 ">
+                <h3 class="text-center">Thông tin liên hệ
+                    <h4></h4>
+                    <br>
+                    <p class="text-center">Ngoài ra các bạn có thể liên hệ trực tiếp qua thông tin dưới đây</p>
+                    <div class="row justify-content-center py-5">
+                        <div class="card mb-3 col-md-7">
+                            <img src="images/lienhe/soc-sieu-quay-alvinn-and-the-chipmunks-1635997652.jpeg" class="card-img-top" alt="..." width="150px">
+                            <div class="card-body">
+                                <h5 class="card-title">Co-founder of Double Dee-Tea</h5>
+                                <p class="">
+                                    <i class="fa-regular fa-envelope"></i> Phan Trần Thảo Duy - duyb2111789@student.ctu.edu.vn <br> <i class="fa-regular fa-envelope"></i> Võ Phương Duy - duyb2111790@student.ctu.edu.vn <br> <i class="fa-regular fa-envelope"></i>                                    Nguyễn Đức Tài - taib2111818@student.ctu.edu.vn</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+
+                    </div>
+    </main>
+    <script>
+        function close() {
+            window.location = "./lienhe.html";
+        }
+
+        function contactValidate(frm) {
+            if (frm.message.value.length < 10) {
+                alert("Nội dung cần có ít nhất 10 ký tự");
+                frm.message.focus();
+                return false;
+            }
+            alert("Hệ thống ghi nhận thông tin của quý khách.")
+            return true;
+
+        }
+    </script>
+    <footer>
+        <div class="item-1">
+            <img class="img-ft" src="images/lienhe/logo-ft (1).png" width="100px" height="auto">
+        </div>
+        <div class="item-2">
+            <p style="color: aliceblue !important; font-size: 1em ;">
+                COPYRIGHT &COPY2023 DOUBLE DEETEA VN
+            </p>
+        </div>
+        <div class="item-3">
+            <i class="fa-brands fa-square-facebook "></i>
+            <i class="fa-brands fa-instagram "></i>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

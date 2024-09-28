@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập</title>
+    <!-- phan logo -->
+    <link href="images/FINAL.png" rel="shortcut icon" type="image/vnd.microsoft.icon" >
+    <!-- phan bootstrap -->
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- phan css -->
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <!-- phan jquery -->
+    <script src="bootstrap-5.3.2-dist/js/jquery-3.6.0.min.js"></script>
+    <!-- phan javascript -->
+    <script src="js/courses.js"></script>
+    <script src="js/lables1.js"></script>
+    <script src="js/trangchu.js"></script>
+    <!-- phan thu vien aos -->
+    <link rel="stylesheet" href="aos-master/aos-master/dist/aos.css">
+    <!-- phan thu vien icon -->
+    <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.min.css">
+    
+</head>
+<body>
+  <header>
+    <!-- Vị trí logo -->
+    <a href="trangchu.html"><img id="logo" src="images/logo_header.png" alt=""></a>
+    <!-- Vị trí thanh điều hướng -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navigation">
+      <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a id="main" class="nav-link active multilang" href="trangchu.html">Trang Chủ</a>					
+          <a id="abs" class="nav-link multilang" href="gioithieu.html">Giới Thiệu</a>
+          <a id="product" class="nav-link multilang" href="sanpham.html">Sản Phẩm</a>
+          <a id="news" class="nav-link multilang" href="tintuc.html">Tin Tức</a>
+          <a id="call" class="nav-link multilang" href="lienhe.html">Liên Hệ</a>
+          <a id="cmd" class="nav-link multilang" href="comment.html">Đánh giá</a>
+          <a id="Dangnhap_b" class="nav-link  multilang"  href="dangnhap.html">Đăng nhập</a>		
+          <a href="donhang.html"><i class="fa-solid fa-cart-shopping pt-2"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  </header>
+  <main>
+
+  
+    <div class="wrapper px-4">     
+        <div class="container d-flex justify-content-center align-items-center min-vh-100">
+            <div class="row p-0 bg-light">
+                <div class="col-md-6 side-image position-relative">     
+                </div>
+                <div class="col-md-6 right ">
+                 
+                    <form action="" class="needs-validation" novalidate>
+                    <div class="input-box"> 
+                      <span id="language" class="d-flex justify-content-end mb-3">
+                        <a href="#" onclick="setLang('vi-VN')"><img src="images/comment/vn.png"><a
+                        href="#" onclick="setLang('en-US')"><img src="images/comment/us.png"></a>
+                      </span>
+                        <h3 class="fw-bold text-center mb-4 multilang" id="Dangky">Đăng ký</h3>
+                        
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" required minlength="5">
+                            <label for="floatingInput" class="multilang" id="label">Họ và Tên</label>
+                            <div class="invalid-feedback multilang" id="feedback1">
+                                Tên phải trên 5 kí tự.
+                            </div>
+                          </div>
+                          <div class="form-floating mb-4">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required minlength="6">
+                            <label for="floatingPassword" class="multilang" id="label2">Mật khẩu</label>
+                            <div class="invalid-feedback multilang" id="feedback2">
+                                Mật khẩu phải trên 6 kí tự.
+                            </div>
+                          </div>
+                        <div class="input-field px-2"> 
+                            <button class="submit multilang" type="submit" id="button">Đăng Nhập</button>
+                        </div> 
+                        <div class="signin">
+                         <span class="multilang" id="MESSEAGE">Bạn chưa có tài khoản? </span>
+                         <a href="dangky.html" class="multilang" id="link"> Đăng nhập</a>
+                        </div>
+                        <div class="social-icons">
+                          <a href="#" class="icon"><i class="fab fa-google" style="color:red;"></i></a>
+                          <a href="#" class="icon"><i class="fab fa-facebook-f" style="color:blue;"></i></a>
+                          <a href="#" class="icon"><i class="fab fa-twitter" style="color:blue;"></i></a>
+                      </div>
+                       
+                     </div>
+                    </form>  
+                 </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+  </main>
+  <footer>
+    <div class="item-1">
+        <img class="img-ft" src="images/lienhe/logo-ft (1).png" width="100px" height="auto">
+    </div>
+    <div class="item-2">
+        <p style="color: aliceblue !important; font-size: 1em ;">
+            COPYRIGHT &COPY2023 DOUBLE DEETEA VN
+        </p>
+    </div>
+    <div class="item-3">
+        <i class="fa-brands fa-square-facebook "></i>
+        <i class="fa-brands fa-instagram "></i>
+    </div>
+
+</footer>
+  <script src="js/adsdangkynhap.js">
+  </script>
+    <script>
+      (function () {
+    'use strict'
+    var forms = document.querySelectorAll('.needs-validation')
+    Array.prototype.slice.call(forms)
+      .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+          form.classList.add('was-validated')
+        }, false)
+      })
+  })()  
+
+
+    </script>
+</body>
+<!-- <script src="/js/adsdangkynhap.js"></script> -->
+
+</html>

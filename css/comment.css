@@ -1,0 +1,218 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    position:sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 100px;
+    background-color:#FFF6D1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+#logo {
+    width: 70px;
+    height:auto;
+}
+/* PHAN THANH DIEU HUONG */
+.navigation a {
+    position: relative;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 40px;
+    color: #5B4737;
+}
+
+.navigation a::after {
+    content:'';
+    position:absolute;
+    width: 100%;
+    left: 0;
+    bottom: -6px;
+    height: 3px;
+    background:#5B4737;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #5B4737;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #5B4737;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.navigation .btnLogin-popup:hover {
+    background: #5B4737;
+    color:  #FFF6D1;
+    font-size: 0.9em;
+
+}
+/*PHAN ICON CHUNG*/
+.fa-solid {
+    font-size: 25px !important;
+    cursor: pointer;
+    color: #5B4737;
+}
+
+main{
+    background: #fff6d1;
+}
+#test{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.test-heading{
+    letter-spacing: 1px;
+    margin: 30px 0px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.test-heading h1{
+    font-size: 2.2rem;
+    font-weight: 500;
+    background-color: #5b4737;
+    color: #ffffff;
+    padding: 10px 20px;
+}
+.box{
+    border-radius: 20px;
+    width: 500px; /*độ rộng của box*/
+    box-shadow: 2px 2px 30px  rgba(0,0,0,0.1);
+    background-color:  #f1f1f1;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+.box_cm{
+    border-radius: 20px;
+    width: 1020px; /*độ rộng của box*/
+    box-shadow: 2px 2px 30px  rgba(0,0,0,0.1);
+    background-color:  #f1f1f1;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+.profile-img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+
+.name-user{
+    display: flex;
+    flex-direction: column;
+}
+.name-user strong{
+    color: #3d3d3d;
+    font-size: 1.1.rem;
+    letter-spacing: 0.5px;
+}
+.name-user span{
+    color: #979797;
+    font-size: 0.8rem;
+
+}
+.reviews{
+    color: #f9d71c;
+}
+.box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.comment p{
+    font-size: 0.9rem;
+    color: #4b4b4b;
+}
+.box:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+}
+p{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000;
+}
+@media(max-width:340px){
+    .box-top{
+       flex-wrap: wrap;
+       margin-top: 10px;
+    }
+    .reviews{
+        margin-top: 10px;
+    }
+}
+/*chân trang*/
+.gotop
+{
+	position: fixed;
+	bottom: 5px;
+	right:10px;
+	z-index:100;	
+}
+.heading{
+    font-size: 25px;
+    margin-right: 25px;
+}
+.checked{
+    color: #f9d71c;
+   
+}
+.fa{
+    font-size: 25px;
+}
+.bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+}
+  .bar-5 {width: 60%; height: 18px; background-color: #04AA6D;}
+  .bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+  .bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+  .bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+  .bar-1 {width: 15%; height: 18px; background-color: #f44336;}

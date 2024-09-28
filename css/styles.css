@@ -1,0 +1,391 @@
+
+/* tone color:
+- Màu Nâu: #5B4737
+- Màu Cam: #ED9A66
+- Màu Vàng: #FFEC63
+- Màu Xanh đậm: #65BC95
+- Màu Xanh lá : #BFE063
+- Màu Be: #FFF6D1 */
+
+
+* {
+    margin:0;
+    border: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+/* h1{
+    text-align: center;
+    background-color: #FFF6D1;
+    color: #5B4737;
+    font-weight: 900;
+    padding: 30px;
+    margin-bottom: 0;
+} */
+#language{
+    position: absolute;
+    z-index: 102;
+    top: 25px;
+    right: 10px;
+}
+#language a{
+    margin: 5px;
+}
+.section1 {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFF6D1;
+}
+
+header {
+    position:sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 100px;
+    background-color:#FFF6D1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+#logo {
+    width: 70px;
+    height:auto;
+}
+/* PHAN THANH DIEU HUONG */
+.navigation{
+    background-color: #FFF6D1 !important;
+}
+.navigation a {
+    position: relative;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 40px;
+    color: #5B4737;
+    
+}
+
+
+.navigation a::after {
+    content:'';
+    position:absolute;
+    width: 100%;
+    left: 0;
+    margin-top: 30px !important;
+    height: 3px;
+    background:#5B4737;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+/* PHAN FOOTER */
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: "ft fm fn";
+    background-color: #5B4737;
+    color: #ffffff;
+}
+
+.fa-brands {
+    color: #ffff;
+    margin: 10px;
+    font-size: 50px;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+
+.item-1 {
+    grid-area: ft;
+    margin-left: 50px;
+    padding-left: 50px;
+}
+
+.item-2 {
+    grid-area: fm;
+    color: #ffffff;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px
+}
+
+.item-3 {
+    grid-area: fn;
+    margin: 10px;
+    align-items: center;
+    padding: 10px;
+}
+/*PHAN ICON CHUNG*/
+.fa-solid {
+    font-size: 25px !important;
+    cursor: pointer;
+    color: #5B4737;
+}
+
+/* PHAN CONTENT SELECTION 1 */
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+}
+
+.content .textBox {
+    position: relative;
+    max-width: 600px;
+}
+
+.content .textBox h2 {
+    color: #000000;
+    font-size: 3em;
+    line-height: 1.2em;
+    font-weight: 500;
+}
+
+.content .textBox h2 span {
+    color: #5B4737;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+.content .textBox p {
+    color:#333;
+}
+.btn-learn-more{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #5B4737;
+    color: #fff;
+    border: 1px solid #5B4737;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.btn-learn-more:hover {
+    background: #FFF6D1;
+    color: #5B4737;
+}
+.content .imgBox {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 50px;
+    margin-top: -50px;
+}
+
+.content .imgBox img {
+    max-width: 600px;
+}
+/* PHAN THUBMNAIL 3 CAI LY */
+.thumb {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display:flex;
+}
+.thumb li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+.thumb li:hover {
+    transform: translateY(-15px);
+}
+.thumb li img {
+    max-width: 100px;
+}
+/* PHAN HINH TRON */
+.circle {
+    position: absolute;
+    padding: 100px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #5B4737;
+    clip-path: circle(600px at right bottom);
+    transition: 1s;
+}
+/* phần giao diện khi responsive section 1 */
+@media (max-width: 1000px){
+    .section1{
+        padding: 20px 20px 120px;
+    }
+    .content{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .content .textBox h2{
+        font-size: 2.5em;
+        margin-bottom: 15px;
+    }
+    .content .textBox{
+        max-width: 100%;
+    }
+    .content .imgBox{
+        max-width: 100%;
+        justify-content: center;
+        margin-top: 5px;
+    }
+    
+    .thumb li img{
+        max-width: 60px;
+    }
+    .circle {
+        clip-path: circle(400px at center bottom);
+    }
+
+
+
+    
+}
+
+
+/* SECTION 3: GIỚI THIỆU */
+
+h1 {
+    color: #5B4737;
+    font-size: 3em;
+    text-align: center;
+    background-image: linear-gradient(90deg,#FFF6D1,#eba478,#FFF6D1);
+    transition: 0.5s;
+    line-height: 1.2em;
+    font-weight: 900;
+    margin-bottom: 0px;
+    padding: 15px;
+}
+h1 span {
+    color: #FFF6D1;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+.section3 {
+    background: #FFF6D1;
+}
+.section3 img{
+    border: 2px solid #5B4737;
+    border-radius: 60px;
+    padding: 20px;
+    
+}
+/* PHAN SECTION 3 */
+.accordion-button{
+    background-color: #FFF6D1;
+}
+
+/* PHAN SECTION 4 */
+.section4{
+    background-color: #FFF6D1;
+}
+.section4 .card{
+    border: 2px solid #5B4737;
+    padding: 20px;
+    background-color: #FFF6D1;
+    color: #5B4737;
+    border-radius: 20px;
+    font-size: 18px;
+    box-shadow: 0 20px 30px 0 #5b473773;
+    /* filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.205)); */
+}
+
+
+.section4 img, video{
+    width:100%;
+    height:300px;
+    object-fit: cover;
+}
+
+/* ========PHAN TRANG SAN PHAM=========== */
+
+.listProduct img {
+    width: 100%;
+    filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.484));
+}
+ .listProduct  {
+    background-color: #FFF6D1;
+
+}
+.listProduct .item {
+    background-image: linear-gradient(#FFF6D1,#ffed63ae);
+    border-radius: 50px;
+    border: 2px solid #FFF6D1;
+    text-align: center;
+    display: block;
+}
+.listProduct .item:hover{
+    border: 2px solid #ED9A66;
+    transition: 1s;
+}
+
+.addCart {
+    background-color: #ED9A66  ;
+    color: #FFF6D1;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    border: none;
+    width: fit-content;
+}
+.addCart:hover{
+    background-color: #5B4737;
+    transition:0.5s;
+}
+.addNum {
+    background-color: #FFF6D1;
+    color: #5B4737;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    width: fit-content;
+    
+    
+}
+/* =================TRANG GIO HANG================= */
+main{
+    background-color: #FFF6D1;
+}
+
+#cartDetail thead, tbody,  tr, th, td {
+    border: 1.5px solid #5B4737;
+    padding: 10px;  
+}
+
+
+#cartDetail img{
+    filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.447));
+}
+
+#cartDetail thead{
+    text-align: center;
+    font-size: 1.2em;
+    color: #FFF6D1;
+    background-color: #5B4737;
+}
+

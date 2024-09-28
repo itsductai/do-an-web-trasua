@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Giỏ hàng</title>
+        <!-- phan logo -->
+        <link href="images/FINAL.png" rel="shortcut icon" type="image/vnd.microsoft.icon" >
+        <!-- phan bootstrap -->
+        <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+        <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+        <!-- phan css -->
+        <link rel="stylesheet" href="css/styles.css">
+        <!-- phan javascript -->
+        <script src="js/trangchu.js"></script>
+        <script src="js/sanpham.js"></script>
+        <!-- phan thu vien icon -->
+        <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.min.css">
+        <script>
+            window.onload=function(){showCart();};
+        </script>
+    </head>
+
+
+    <body>
+        <header>
+            <!-- Vị trí logo -->
+		<a href="trangchu.html"><img id="logo" src="images/logo_header.png" alt=""></a>
+		<!-- Vị trí thanh điều hướng -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light navigation">
+            <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a id="main" class="nav-link active multilang" href="trangchu.html">Trang Chủ</a>					
+                <a id="abs" class="nav-link multilang" href="gioithieu.html">Giới Thiệu</a>
+                <a id="product" class="nav-link multilang" href="sanpham.html">Sản Phẩm</a>
+                <a id="news" class="nav-link multilang" href="tintuc.html">Tin Tức</a>
+                <a id="call" class="nav-link multilang" href="lienhe.html">Liên Hệ</a>
+                <a id="cmd" class="nav-link multilang" href="comment.html">Đánh giá</a>
+                <a id="Dangnhap_b" class="nav-link  multilang"  href="dangnhap.html">Đăng nhập</a>		
+                <a href="donhang.html"><i class="fa-solid fa-cart-shopping pt-2"></i></a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        </header>
+
+        <main class="one-col p-5">
+            <article class="main-content p-5">
+            <h1>Chi Tiết Đơn Hàng</h1>
+                <table id="cartDetail" class="mt-5" width="100%">
+                    <thead>
+                        <tr>
+                        <th>Hình SP</th>
+                        <th>Tên SP</th>
+                        <th>Số lượng</th>
+                        <th>Giá</th>
+                        <th>Thành Tiền</th>
+                        <th> </th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                    </tbody>
+
+                    <tfoot>
+                        <tr><td colspan="6" align="right">
+                            Tổng tiền = <span
+                            id="bill_pre_tax_total"></span></td></tr>
+                        <tr><td colspan="6" align="right">
+                            Thuế = <span
+                            id="bill_tax"></span></td></tr>
+                        <tr><td colspan="6" align="right">
+                            Tổng đơn hàng = <span
+                            id="bill_total"></span></td></tr>
+                        <tr><td colspan="6" align="center">
+                            <button class="addCart mt-3 w-25" type="submit" onclick="dathang()">Xác Nhận Đơn Hàng</button></td></tr>
+                    </tfoot>
+                </table>
+            </article>
+        </main>
+        <footer>
+            <div class="item-1">
+                <img class="img-ft" src="images/lienhe/logo-ft (1).png" width="100px" height="auto">
+            </div>
+            <div class="item-2">
+                <p style="color: aliceblue !important; font-size: 1em ;">
+                    COPYRIGHT &COPY2023 DOUBLE DEETEA VN
+                </p>
+            </div>
+            <div class="item-3">
+                <i class="fa-brands fa-square-facebook "></i>
+                <i class="fa-brands fa-instagram "></i>
+            </div>
+        
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,272 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Sản phẩm</title>
+    <!-- phan logo -->
+	<link href="images/FINAL.png" rel="shortcut icon" type="image/vnd.microsoft.icon" >
+    <!-- phan bootstrap -->
+	<link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+	<script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- phan css -->
+	<link rel="stylesheet" href="css/styles.css">
+    <!-- phan javascript -->
+    <script src="js/trangchu.js"></script>
+	<script src="js/sanpham.js"></script>
+    <!-- phan thu vien aos -->
+	<link rel="stylesheet" href="aos-master/aos-master/dist/aos.css">
+    <!-- phan thu vien icon -->
+    <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.min.css">
+</head>
+
+<body>
+	<header>
+		<!-- Vị trí logo -->
+		<a href="trangchu.html"><img id="logo" src="images/logo_header.png" alt=""></a>
+		<!-- Vị trí thanh điều hướng -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light navigation">
+            <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a id="main" class="nav-link active multilang" href="trangchu.html">Trang Chủ</a>					
+                <a id="abs" class="nav-link multilang" href="gioithieu.html">Giới Thiệu</a>
+                <a id="product" class="nav-link multilang" href="sanpham.html">Sản Phẩm</a>
+                <a id="news" class="nav-link multilang" href="tintuc.html">Tin Tức</a>
+                <a id="call" class="nav-link multilang" href="lienhe.html">Liên Hệ</a>
+                <a id="cmd" class="nav-link multilang" href="comment.html">Đánh giá</a>
+                <a id="Dangnhap_b" class="nav-link  multilang"  href="dangnhap.html">Đăng nhập</a>		
+                <a href="donhang.html"><i class="fa-solid fa-cart-shopping pt-2"></i></a>
+              </div>
+            </div>
+          </div>
+        </nav>
+	</header>
+	
+	<main class="one-col">
+		<article>
+			<section>
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <img src="images/trangchu/banner-quang-cao/Cover-web_rainbow-01-1-scaled_dl.png" class="d-block w-100" alt="...">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="images/trangchu/banner-quang-cao/cover-web-nhãn-01-scaled_dl.png" class="d-block w-100" alt="...">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="images/trangchu/banner-quang-cao/cover-web-grape-scaled_dl.png" class="d-block w-100" alt="...">
+                    </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+
+			<h1>Sản phẩm <span>mới</span></h1>
+			<section class="listProduct">
+				<div class="container pt-5">
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-4" data-aos="zoom-in-right" data-aos-duration="1200">
+                            <div class="card m-3 item" >
+                                <img src="images/sanpham/Hinh-Web-rainbow-now.png" class="card-img-top" alt="...">
+                                <h5 class="card-title">Rainbow Crush</h5>
+                                <p class="card-text"><span>60.000</span>vnd</p>
+								<span class="add-cart">
+                                <input id="sp001" type="number" min="0" max="100" size="3" value="0" onKeyDown="return false" />
+                                <button onclick="addCart('sp001')" href="#" class="btn btn-primary addCart " >Thêm món</button>
+								</span>
+								
+                        	</div>
+						</div>
+						<div class="col-sm-6 col-lg-4" data-aos="zoom-in-up" data-aos-duration="1200">
+                            <div class="card m-3 item">
+                                <img src="images/sanpham/Hinh-Web-cotton-candy-now.png" class="card-img-top" alt="...">
+                                <h5 class="card-title">Cotton Candy Milk Tea</h5>
+                                <p class="card-text"><span>65.000</span>vnd</p>
+								<span class="add-cart">
+                                <input id="sp002" type="number" min="0" max="100" size="3" value="0" onKeyDown="return false" />
+                                <button onclick="addCart('sp002')" href="#" class="btn btn-primary addCart " ">Thêm món</button>
+								</span>
+								
+                        	</div>
+						</div>
+						<div class="col-sm-6 col-lg-4" data-aos="zoom-in-left" data-aos-duration="1200">
+                            <div class="card m-3 item">
+                                <img src="images/sanpham/TRA-NHO.png" class="card-img-top" alt="...">
+                                <h5 class="card-title">Trà nho</h5>
+                                <p class="card-text"><span>75.000</span>vnd</p>
+								<span class="add-cart">
+                                <input id="sp003" type="number" min="0" max="100" size="3" value="0" onKeyDown="return false" />
+                                <button onclick="addCart('sp003')" href="#" class="btn btn-primary addCart " >Thêm món</button>
+								</span>
+								
+                        	</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<h1>Sản phẩm <span>bán chạy</span></h1>
+			<section class="listProduct">
+				<div class="container pt-5">
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-4" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1200">
+                            <div class="card m-3 item">
+                                <img src="images/sanpham/Hinh-Web-sunrise-milk-tea-now.png" class="card-img-top" alt="...">
+                                <h5 class="card-title">Sunrise Milk Tea</h5>
+                                <p class="card-text"><span>80.000</span>vnd</p>
+								<span class="add-cart">
+                                <input id="sp004" type="number" min="0" max="100" size="3" value="0" onKeyDown="return false" />
+                                <button onclick="addCart('sp004')" href="#" class="btn btn-primary addCart " >Thêm món</button>
+								</span>
+								
+                        	</div>
+						</div>
+						<div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1200">
+                            <div class="card m-3 item">
+                                <img src="images/sanpham/Mango-Milktea.png" class="card-img-top" alt="...">
+                                <h5 class="card-title">Trà sữa xoài</h5>
+                                <p class="card-text"><span>62.000</span>vnd</p>
+								<span class="add-cart">
+                                <input id="sp005" type="number" min="0" max="100" size="3" value="0" onKeyDown="return false" />
+                                <button onclick="addCart('sp005')" href="#" class="btn btn-primary addCart " >Thêm món</button>
+								</span>
+								
+                        	</div>
+						</div>
+						<div class="col-sm-6 col-lg-4" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1200">
+                            <div class="card m-3 item">
+                                <img src="images/sanpham/Tra-Sua-Dao.png" class="card-img-top" alt="...">
+                                <h5 class="card-title">Trà sữa đào</h5>
+                                <p class="card-text"><span>65.000</span>vnd</p>
+								<span class="add-cart">
+                                <input id="sp006" type="number" min="0" max="100" size="3" value="0" onKeyDown="return false" />
+                                <button onclick="addCart('sp006')" href="#" class="btn btn-primary addCart ">Thêm món</button>
+								</span>
+								
+                        	</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<h1>Sản phẩm <span>được yêu thích</span></h1>
+			<section class="listProduct">
+				<div class="container pt-5">
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1200">
+                            <div class="card m-3 item">
+                                <img src="images/sanpham/DA-XAY-NHO.png" class="card-img-top" alt="...">
+                                <h5 class="card-title">Đá xay nho</h5>
+                                <p class="card-text"><span>88.000</span>vnd</p>
+								<span class="add-cart">
+                                <input id="sp007" type="number" min="0" max="100" size="3" value="0" onKeyDown="return false" />
+                                <button onclick="addCart('sp007')" href="#" class="btn btn-primary addCart " >Thêm món</button>
+								</span>
+								
+                        	</div>
+						</div>
+						<div class="col-sm-6 col-lg-4" data-aos="fade-down" data-aos-delay="1000" data-aos-duration="1200">
+                            <div class="card m-3 item">
+                                <img src="images/sanpham/Mint-Chocolate-Milk-Tea-w-Pearl-Iced.png" class="card-img-top" alt="...">
+                                <h5 class="card-title">Trà sữa bạc hà choco</h5>
+                                <p class="card-text"><span>70.000</span>vnd</p>
+								<span class="add-cart">
+                                <input id="sp008" type="number" min="0" max="100" size="3" value="0" onKeyDown="return false" />
+                                <button onclick="addCart('sp008')" href="#" class="btn btn-primary addCart " >Thêm món</button>
+								</span>
+								
+                        	</div>
+						</div>
+						<div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="1200" data-aos-duration="1200">
+                            <div class="card m-3 item">
+                                <img src="images/sanpham/Strawberry-Earl-grey-latte.png" class="card-img-top" alt="...">
+                                <h5 class="card-title">Strawberry Cookie Milk Tea</h5>
+                                <p class="card-text"><span>75.000</span>vnd</p>
+								<span class="add-cart">
+                                <input id="sp009" type="number" min="0" max="100" size="3" value="0" onKeyDown="return false" />
+                                <button onclick="addCart('sp009')" href="#" class="btn btn-primary addCart " >Thêm món</button>
+								</span>
+                        	</div>
+						</div>
+
+						<div class="col-sm-6 col-lg-4" data-aos="fade-down" data-aos-delay="1500" data-aos-duration="1200">
+                            <div class="card m-3 item">
+                                <img src="images/sanpham/Trà-sữa-Khoai-môn-2.png" class="card-img-top" alt="...">
+                                <h5 class="card-title">Trà sữa khoai môn</h5>
+                                <p class="card-text"><span>68.000</span>vnd</p>
+                            <span class="add-cart">
+                                <input id="sp010" type="number" min="0" max="100" size="3" value="0" onKeyDown="return false" />
+                                <button onclick="addCart('sp010')" href="#" class="btn btn-primary addCart " >Thêm món</button>
+								</span>
+								
+                        	</div>
+                        
+						</div>
+						<div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="1800" data-aos-duration="1200">
+                            <div class="card m-3 item">
+                                <img src="images/sanpham/Tra-Sua-Dau-Cookie-1.png" class="card-img-top" alt="...">
+                                <h5 class="card-title">Trà sữa dâu Cookie</h5>
+                                <p class="card-text"><span>78.000</span>vnd</p>
+								<span class="add-cart">
+                                <input id="sp011" type="number" min="0" max="100" size="3" value="0" onKeyDown="return false" />
+                                <button onclick="addCart('sp011')" href="#" class="btn btn-primary addCart " >Thêm món</button>
+								</span>
+								
+                        	</div>
+						</div>
+						<div class="col-sm-6 col-lg-4" data-aos="fade-down" data-aos-delay="2000" data-aos-duration="1200">
+                            <div class="card m-3 item">
+                                <img src="images/sanpham/Trà-sữa-Trân-châu-đen-1.png" class="card-img-top" alt="...">
+                                <h5 class="card-title">Trà sữa trân châu đen</h5>
+                                <p class="card-text"><span>55.000</span>vnd</p>
+								<span class="add-cart">
+                                <input id="sp012" type="number" min="0" max="100" size="3" value="0" onKeyDown="return false" />
+                                <button onclick="addCart('sp012')" href="#" class="btn btn-primary addCart " >Thêm món</button>
+								</span>
+								
+                        	</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<article>
+	</main>
+	<footer>
+        <div class="item-1">
+            <img class="img-ft" src="images/lienhe/logo-ft (1).png" width="100px" height="auto">
+        </div>
+        <div class="item-2">
+            <p style="color: aliceblue !important; font-size: 1em ;">
+                COPYRIGHT &COPY2023 DOUBLE DEETEA VN
+            </p>
+        </div>
+        <div class="item-3">
+            <i class="fa-brands fa-square-facebook "></i>
+            <i class="fa-brands fa-instagram "></i>
+        </div>
+    
+      </footer>
+
+    <script src="aos-master/aos-master/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+</body>
+
+</html>

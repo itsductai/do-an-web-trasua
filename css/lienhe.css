@@ -1,0 +1,87 @@
+body {
+    background-color: #fff6d1;
+}
+
+.card {
+    padding: 30px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #5B4737;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    border-radius: 20px !important;
+    padding: 30px!important;
+    background-color: #ffff !important;
+    height: 100% !important;
+    opacity: 0.95 !important;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75) !important;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+card:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+    background-color: #5B4737 !important;
+    width: 100% !important;
+    border-radius: 10px !important;
+    color: #ffffff !important;
+    align-items: center;
+    text-align: center;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: "ft fm fn";
+    background-color: #5B4737;
+    color: #ffffff;
+}
+
+.fa-brands {
+    color: #ffff;
+    margin: 10px;
+    font-size: 50px;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+
+.item-1 {
+    grid-area: ft;
+    margin-left: 50px;
+    padding-left: 50px;
+}
+
+.item-2 {
+    grid-area: fm;
+    color: #ffffff;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px
+}
+
+.item-3 {
+    grid-area: fn;
+    margin: 10px;
+    align-items: center;
+    padding: 10px;
+}
+
+.btn-primary:hover {
+    background-color: cornflowerblue !important;
+    transition: background-color 0.3s ease !important;
+}

@@ -3,75 +3,209 @@
     <head>
         <meta charset="UTF-8">
         <title>Trang chủ</title>
-        <link href="/images/FINAL.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
-        <link rel="stylesheet" href="styles.css">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    </head>
+        <!-- phan logo -->
+        <link href="images/FINAL.png" rel="shortcut icon" type="image/vnd.microsoft.icon" >
+        <!-- phan jquery -->
+    <script src="bootstrap-5.3.2-dist/js/jquery-3.6.0.min.js"></script>
+        <!-- phan bootstrap -->
+        <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+        <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+        <!-- phan css -->
+        <link rel="stylesheet" href="css/styles.css">
+        <!-- phan javascript -->
+        <script src="js/trangchu.js"></script>
+        <script src="js/lables_main.js"></script>
+        <script src="js/courses.js"></script>
+        <!-- phan thu vien aos  https://michalsnik.github.io/aos/ -->
+        <link rel="stylesheet" href="aos-master/aos-master/dist/aos.css">
+        <!-- phan thu vien icon -->
+        <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.min.css">
+      </head>
     <body>
         <header>
             <!-- Vị trí logo -->
-            <a href="/trangchu.html"><img id="logo" src="/images/logo_header.png" alt=""></a>
+            <a href="trangchu.html"><img id="logo" src="images/logo_header.png" alt=""></a>
             <!-- Vị trí thanh điều hướng -->
-            <div class="toggle" onclick="toggleMenu()"></div>
-            <nav class="navigation">
-                <a href="trangchu.html">Trang Chủ</a>					
-                <a href="gioithieu.html">Giới Thiệu</a>
-                <a href="sanpham.html">Sản Phẩm</a>
-                <a href="tintuc.html">Tin Tức</a>
-                <a href="lienhe.html">Liên Hệ</a>
-                <a href="feedback.html">Feedback</a>
-
-                <button class="btnLogin-popup">Đăng nhập</button>			
+            <span id="language">
+              <a href="#" onclick="setLang('vi-VN')"><img src="images/comment/vn.png"><a
+              href="#" onclick="setLang('en-US')"><img src="images/comment/us.png"></a>
+            </span>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light navigation">
+                <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a id="main" class="nav-link active multilang" href="trangchu.html">Trang Chủ</a>					
+                    <a id="abs" class="nav-link multilang" href="gioithieu.html">Giới Thiệu</a>
+                    <a id="product" class="nav-link multilang" href="sanpham.html">Sản Phẩm</a>
+                    <a id="news" class="nav-link multilang" href="tintuc.html">Tin Tức</a>
+                    <a id="call" class="nav-link multilang" href="lienhe.html">Liên Hệ</a>
+                    <a id="cmd" class="nav-link multilang" href="comment.html">Đánh giá</a>
+                    <a id="Dangnhap_b" class="nav-link  multilang"  href="dangnhap.html">Đăng nhập</a>		
+                    <a href="donhang.html"><i class="fa-solid fa-cart-shopping pt-2"></i></a>
+                  </div>
+                  
+                </div>
+               
+              </div>
+              
             </nav>
         </header>
+
+
         <main>
-            <section>
+            <!-- PHAN GIOI THIEU -->
+            <section class="section1">
                 <div>
-                    <div class="circle">
-
-                    </div>
-
-                    <div class="content">
-                        <div class="textBox">
-                            <h2>Đó không chỉ là trà sữa <br>Đó là <span>Double Dee Tea</span> </h2>
-                            <p>Double Dee Tea là một nơi sẽ mang lại những phút giây tận hưởng tuyệt vời đến cho bạn, mang một phong cách hiện đại và trẻ trung,
+                    <div class="circle" data-aos="fade-in" data-aos-duration="1500" ></div>
+                  <!-- Phần section 1 này có dùng hiệu ứng fade- của thư viện AOS  -->
+                    <div class="content" >
+                        <div class="textBox" data-aos="fade-right" data-aos-duration="2000">
+                            <h2 id="h2_1" class="multilang">Đó không chỉ là trà sữa <br>Đó là <span>Double Dee Tea</span> </h2>
+                            <p id="p1" class="multilang">Double Dee Tea là một nơi sẽ mang lại những phút giây tận hưởng tuyệt vời đến cho bạn, mang một phong cách hiện đại và trẻ trung,
                                 luôn cập nhật xu hướng của giới trẻ với những hương vị hoàn toàn tươi mới và khác biệt. Hứa hẹn sẽ mang lại một trải nghiệm tuyệt vời ngay từ lần đầu tiên.
                             </p>
-                            <a href="#">Tìm hiểu thêm</a>
+                            <a id="try" href="sanpham.html" class="btn-learn-more multilang">Thưởng thức ngay</a>
                         </div>
 
-                        <div class="imgBox">
-                            <img src="/images/sanpham_chuaxoalogo/Crunchie-Toffee-Latte_dl.png" class="doubleDeeTee" alt="">
+                        <div class="imgBox" data-aos="fade-in" data-aos-duration="2000">
+                            <img src="images/sanpham/Crunchie-Toffee-Latte.png" class="doubleDeeTee" alt="">
                         </div>
                     </div>
 
                     <ul class="thumb">
-                        <li><img onclick="chonHinh('/images/sanpham_chuaxoalogo/Crunchie-Toffee-Latte_dl.png'); doiMau('#5B4737')" src="/images/sanpham_chuaxoalogo/Crunchie-Toffee-Latte_dl.png" alt="" ></li>
-                        <li><img onclick="chonHinh('/images/sanpham_chuaxoalogo/Mint-Chocolate-Milk-Tea-w-Pearl-Iced.png'); doiMau('#65BC95')" src="/images/sanpham_chuaxoalogo/Mint-Chocolate-Milk-Tea-w-Pearl-Iced.png" alt="" ></li>
-                        <li><img onclick="chonHinh('/images/sanpham_chuaxoalogo/Mango-Milktea_dl.png'); doiMau('#ED9A66')" src="/images/sanpham_chuaxoalogo/Mango-Milktea_dl.png" alt="" ></li>
+                        <li><img onclick="chonHinh('images/sanpham/Crunchie-Toffee-Latte.png'); doiMau('#5B4737')" src="images/sanpham/Crunchie-Toffee-Latte.png" alt="" ></li>
+                        <li><img onclick="chonHinh('images/sanpham/Mint-Chocolate-Milk-Tea-w-Pearl-Iced.png'); doiMau('#65BC95')" src="images/sanpham/Mint-Chocolate-Milk-Tea-w-Pearl-Iced.png" alt="" ></li>
+                        <li><img onclick="chonHinh('images/sanpham/Mango-Milktea.png'); doiMau('#ED9A66')" src="images/sanpham/Mango-Milktea.png" alt="" ></li>
                     </ul>
                 </div>
         </section>  
-            <div class="slide-show">
-                <div class="list-image">
-                    <img class="img-ss" src="/images/trangchu/banner-quang-cao/cover-web-grape-scaled_dl.png" alt="">
-                    <img class="img-ss" src="/images/trangchu/banner-quang-cao/cover-web-nhãn-01-scaled_dl.png" alt="">
-                    <img class="img-ss" src="/images/trangchu/banner-quang-cao/Cover-web_rainbow-01-1-scaled_dl.png" alt="">
+        <!-- PHAN SLIDE SHOW -->
+        <section class="section2">
+          <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="images/trangchu/banner-quang-cao/cover-web-grape-scaled_dl.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Grape Party Series</h5>
+                
                 </div>
-                <div class="btns">
-                    <div class="btn-left btn"><i class='bx bx-chevron-left'></i></div>
-                    <div class="btn-right btn"><i class='bx bx-chevron-right'></i></div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="images/trangchu/banner-quang-cao/cover-web-nhãn-01-scaled_dl.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Lotus Party Series</h5>
+                  
                 </div>
-            </div>     
-        <script src="/trangchu.js"></script>
+              </div>
+              <div class="carousel-item">
+                <img src="images/trangchu/banner-quang-cao/Cover-web_rainbow-01-1-scaled_dl.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Rainbow Series</h5>
+                  
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+      <!--========== VI TRI VE CHUNG TOI =============-->
+    <h1 id="vect" class="multilang">Về <span>chúng tôi</span></h1>
+        <section class="container-fluid section3" >
+            <div class="row p-5">
+                <div class="col-12 col-md-6 align-self-center p-3" data-aos="fade-right" data-aos-duration="2000">
+                  <p id="p2" class="multilang">Trà sữa của Double Dee Tee được sản xuất dựa trên những yếu tố:</p>
+                  <ul >
+                    <li id="li1" class="multilang">Công thức độc quyền, do các chuyên viên kết hợp lại tạo nên một mùi vị rất riêng.</li>
+                    <li id="li2" class="multilang">Chọn lọc từ những nguồn nguyên liệu tươi sạch, những lá trà tự nhiên.</li>
+                    <li id="li3" class="multilang">Béo vị sữa, thơm vị trà và đặc biệt là vị trà đọng lại mang đến một trải nghiệm tuyệt vời.</li> 
+                  </ul>
+                  <a id="lm" href="gioithieu.html" class="btn-learn-more multilang">Tìm hiểu thêm</a>
+                </div>
+
+                <div class="col-12 col-md-6 text-center align-items-center p-3 w-90"  data-aos="fade-up " data-aos-duration="2000">
+                  <img class="hinhsection2" src="images/trangchu/farmer-crop.jpg" alt="">
+                </div>
+            </div>
+            
+        </section>
+    <h1 id="tinhtuy" class="multilang"><span>Tinh túy</span> từ lá trà <span>tự nhiên.</span></h1>
+    <!-- Vị trí section 4 -->
+        <section class="section4">
+          <div class="container">
+            <div class="row p-5">
+              <div class="col-md-6 col-lg-4 align-self-center p-3">
+                <div class="card" data-aos="zoom-out-right" data-aos-delay="300" data-aos-duration="1000">
+                  <video src="images/trangchu/video.mp4" class="card-img-top" loop autoplay muted></video>
+                  <div class="card-body">
+                    <p id="work" class="card-text multilang">
+                      CÔNG VIỆC <br>
+                      Chúng mình biết rằng để thành công, bạn muốn làm việc với những điều tuyệt vời,khoảng thời gian đẹp nhất, hiệu quả nhất, thể hiện được tài năng, đam mê của mình và được là chính mình nhất, khi đó bạn mới có thể vui vẻ vì công việc của mình.     
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class=" col-md-6 col-lg-4 align-self-center p-3">
+                <div class="card" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
+                  <img src="images/trangchu/greentea.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p id="goal" class="card-text multilang">
+                      MỤC TIÊU <br>
+                      Ngay từ những ngày đầu tiên, mục tiêu của chúng mình là có thể phục vụ và góp phần phát triển cộng đồng bằng cách siết chặt thêm sự kết nối và sự gắn bó giữa người với người. 
+                      Chúng mình còn là nơi để kết nối tất cả mọi người với nhau. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 align-self-center p-3">
+                <div class="card" data-aos="zoom-out-left" data-aos-delay="1200" data-aos-duration="1000">
+                  <img src="images/trangchu/service.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p id="ser" class="card-text multilang">
+                      DỊCH VỤ <br>
+                      Là không gian của chúng mình nên mọi thứ ở đây đều vì sự thoải mái của chúng mình.
+                      Đừng giữ trong lòng, hãy chia sẻ với chúng mình điều bạn mong muốn để cùng nhau giúp Double Dee Tea của chúng mình trở nên tuyệt vời hơn.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         </main> 
 
-<!-- Vị trí footer -->
-        <footer>	
-            <p>&copy; 2023 Bản quyền thuộc về Double Dee Tea. 
-                <a href="#" class="social-icon"><i class='bx bxl-facebook-circle'></i></a>
-                <a href="#" class="social-icon"><i class='bx bxl-twitter' ></i></a>
-                <a href="#" class="social-icon"><i class='bx bxl-instagram-alt' ></i></a>
-        </footer>
+        <!-- Vị trí footer -->
+  <footer>
+    <div class="item-1">
+        <img class="img-ft" src="images/lienhe/logo-ft (1).png" width="100px" height="auto">
+    </div>
+    <div class="item-2">
+        <p style="color: aliceblue !important; font-size: 1em ;">
+            COPYRIGHT &COPY2023 DOUBLE DEETEA VN
+        </p>
+    </div>
+    <div class="item-3">
+        <i class="fa-brands fa-square-facebook "></i>
+        <i class="fa-brands fa-instagram "></i>
+    </div>
+
+  </footer>
+        <script src="aos-master/aos-master/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+
     </body>
 </html>
